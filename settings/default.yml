@@ -1,0 +1,15 @@
+common:
+  etcd:
+    endpoints:
+      - 0.0.0.0:23790
+    timeout: 1000
+  mongo:
+    uri: mongodb://localhost,localhost:27018,localhost:27019
+    timeout: 5000
+    database: cron
+    collection: log
+master:
+  host: 0.0.0.0
+  port: 8099
+worker:
+  maxlog: 10
